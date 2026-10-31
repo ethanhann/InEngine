@@ -28,7 +28,7 @@ tokio = { workspace = true, features = ["fs", "io-util", "time", "rt", "rt-multi
 tokio-util = { workspace = true }
 tracing = { workspace = true }
 uuid = { version = "1", features = ["serde", "v4", "v7"] }
-wasmtime = { version = "49", features = ["component-model"] }
+wasmtime = { version = "50", features = ["component-model"] }
 confval = { version = "0.12.0", features = ["derive", "toml", "color"] }
 
 [dev-dependencies]
