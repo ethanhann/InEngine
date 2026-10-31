@@ -12,24 +12,25 @@ workspace = true
 integration = []
 
 [dependencies]
-base64 = "0.23"
-chrono = { workspace = true, features = ["serde"] }
-cron = "0.17"
-crossterm = "0.29"
-flate2 = "1"
-indicatif = "0.18"
-lettre = { version = "0.11", default-features = false, features = ["builder", "hostname", "smtp-transport", "tokio1-rustls", "aws-lc-rs", "rustls-platform-verifier"] }
-reqwest = { version = "0.13", default-features = false, features = ["rustls"] }
-redis = { version = "1.7", features = ["tokio-comp", "connection-manager", "script"] }
-serde = { version = "1", features = ["derive"] }
+
+chrono = { workspace = true }
 serde_json = { workspace = true }
-thiserror = "2"
-tokio = { workspace = true, features = ["fs", "io-util", "time", "rt", "rt-multi-thread", "macros", "sync"] }
 tokio-util = { workspace = true }
 tracing = { workspace = true }
-uuid = { version = "1", features = ["serde", "v4", "v7"] }
-wasmtime = { version = "50", features = ["component-model"] }
-confval = { version = "0.12.0", features = ["derive", "toml", "color"] }
+wasmtime = { workspace = true }
+base64 = { workspace = true }
+cron = { workspace = true }
+crossterm = { workspace = true }
+flate2 = { workspace = true }
+indicatif = { workspace = true }
+lettre = { workspace = true }
+reqwest = { workspace = true }
+redis = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+uuid = { workspace = true }
+confval = { workspace = true }
 
 [dev-dependencies]
 tempfile = { workspace = true }

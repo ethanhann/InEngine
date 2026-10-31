@@ -11,12 +11,27 @@ publish = false
 
 [workspace.dependencies]
 inengine-core = { path = "inengine-core" }
+clap = { version = "4", features = ["derive"] }
 chrono = "0.4"
 serde_json = "1"
 tempfile = "3"
-tokio = "1"
 tokio-util = "0.7"
 tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+wasmtime = { version = "50", features = ["component-model"] }
+base64 = "0.23"
+cron = "0.17"
+crossterm = "0.29"
+flate2 = "1"
+indicatif = "0.18"
+lettre = { version = "0.11", default-features = false, features = ["builder", "hostname", "smtp-transport", "tokio1-rustls", "aws-lc-rs", "rustls-platform-verifier"] }
+reqwest = { version = "0.13", default-features = false, features = ["rustls"] }
+redis = { version = "1.7", features = ["tokio-comp", "connection-manager", "script"] }
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+tokio = { version = "1", features = ["fs", "io-util", "time", "rt", "rt-multi-thread", "macros", "signal", "sync"] }
+uuid = { version = "1", features = ["serde", "v4", "v7"] }
+confval = { version = "0.12.0", features = ["derive", "toml", "color"] }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
